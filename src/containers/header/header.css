@@ -1,5 +1,86 @@
-.haris_films__header-content_video video {
+.haris_films__header {
+    display: flex;
+}
+
+.haris_films__header-content {
     position: relative;
-    width: 100%;
-    objectFit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.haris_films__header-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    z-index: 1;
+    margin-top: 13rem;
+}
+
+.haris_films__header-content h1 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 80px;
+    text-indent: -3.9px;
+    line-height: 100%;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow:
+    -1px -1px 0 #000,
+     0   -1px 0 #000,
+     1px -1px 0 #000,
+     1px  0   0 #000,
+     1px  1px 0 #000,
+     0    1px 0 #000,
+    -1px  1px 0 #000,
+    -1px  0   0 #000;
+    
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.haris_films__header-content p {
+    font-family: var(--font-family);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-top: 1rem;
+}
+
+.haris_films__header-content-btns {
+    display: flex;
+}
+
+.haris_films__header-content-btns button {
+    font-family: var(--font-family);
+    /*revisit font weight*/
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    width: 255px;
+    height: 58px;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 3rem;
+
+
+    color: #FFFFFF;
+    background: #8E8EDB;
+    border: 1px solid #000000;
+    border-radius: 20px;
+}
+
+.haris_films__header-content_video video {
+    position: absolute;
+    margin: 0 -6rem;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 0;
 }
