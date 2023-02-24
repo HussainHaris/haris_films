@@ -1,0 +1,5 @@
+.haris_films__header-content_video video {
+    position: relative;
+    width: 100%;
+    objectFit: cover;
+}
