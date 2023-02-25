@@ -1,25 +1,31 @@
 .haris_films__header {
     display: flex;
+    width: 100%;
+
 }
 
 .haris_films__header-content {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
+    width: 100%; 
 }
 
 .haris_films__header-content-container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: left;
     flex-direction: column;
     z-index: 1;
-    margin-top: 13rem;
+    margin-top: 14.5rem; 
+    min-width: 0;
+
 }
 
-.haris_films__header-content h1 {
+.haris_films__header-content-container h1 {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 80px;
@@ -41,7 +47,7 @@
     color: #FFFFFF;
 }
 
-.haris_films__header-content p {
+.haris_films__header-content-container p {
     font-family: var(--font-family);
     font-style: italic;
     font-weight: 400;
@@ -78,9 +84,112 @@
 
 .haris_films__header-content_video video {
     position: absolute;
+    object-fit: cover;
     margin: 0 -6rem;
     width: 100vw;
+    height: 700px;
     top: 0;
+    bottom:0;
+    right:0;
     left: 0;
     z-index: 0;
+    overflow: hidden;
+
 }
+
+/* @media screen and (max-width: 4000px) {
+    .haris_films__header-content-container {
+        margin-top:16.5rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .haris_films__header-content-container {
+        margin-top:12.5rem;
+    }
+    .haris_films__header-content h1 {
+        text-indent: -1px;
+
+        font-size: 60px;
+    }
+
+    .haris_films__header-content-container p {
+        font-size: 16px;
+        margin-top: 0.5rem;
+    }
+
+    .haris_films__header-content-btns button {
+        margin-top:1.5rem;
+        font-size: 10px;
+        width: 140px;
+        height:32px;
+    }
+} */
+
+/* @media screen and (max-width: 800px) {
+    .haris_films__header-content-container {
+        margin-top:6.5rem;
+    }
+    .haris_films__header-content h1 {
+        text-indent: -1px;
+
+        font-size: 60px;
+    }
+
+    .haris_films__header-content-container p {
+        font-size: 16px;
+        margin-top: 0.5rem;
+    }
+
+    .haris_films__header-content-btns button {
+        margin-top:1.5rem;
+        font-size: 10px;
+        width: 140px;
+        height:32px;
+    }
+} */
+
+/* @media screen and (max-width: 600px) {
+    .haris_films__header-content-container {
+        margin-top:5.5rem;
+    }
+    .haris_films__header-content h1 {
+        text-indent: -1px;
+
+        font-size: 30px;
+    }
+
+    .haris_films__header-content-container p {
+        font-size: 11px;
+        margin-top: 0.5rem;
+    }
+
+    .haris_films__header-content-btns button {
+        margin-top:1.5rem;
+        font-size: 10px;
+        width: 140px;
+        height:32px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .haris_films__header-content-container {
+        margin-top:3rem;
+    }
+    .haris_films__header-content h1 {
+        text-indent: 0px;
+        font-size: 30px;
+    }
+
+    .haris_films__header-content-container p {
+        font-size: 11px;
+        margin-top: .5rem;
+    }
+
+    .haris_films__header-content-btns button {
+        margin-top:1.5rem;
+        font-size: 10px;
+        width: 140px;
+        height:32px;
+    }
+} */
