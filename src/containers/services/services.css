@@ -1,0 +1,29 @@
+.haris_films__services {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.haris_films__services-header {
+    font-family: var(--font-family);
+    font-size: 50px;
+    line-height: 100%;    
+    text-align: center;
+    text-transform: capitalize;
+    
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.haris_films__services-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width:100%;
+    max-width: 1500px;
+    margin-top: 4rem;
+}
+
